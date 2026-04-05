@@ -19,10 +19,15 @@ The website highlights my work in web development and provides details about my 
 
 ## 5️⃣ Project Structure
 - index.html  
-- about.html  
+- About.html  
 - contact.html  
-- project.html  
-- style.css  
+- projects.html
+- resume.html
+- style.css
+- about.css
+- projects.css
+- resume.css
+- contact.css
 - images/  
 
 ## 6️⃣ How to Run
