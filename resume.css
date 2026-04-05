@@ -1,0 +1,163 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* BACKGROUND */
+body{
+    color: white;
+    background : url("https://t3.ftcdn.net/jpg/02/77/63/00/360_F_277630044_fDaatUvU2Bf1m1rCuO8DruD5uUHBoUwK.jpg")no-repeat center center fixed;
+    
+    background-size : cover;
+
+}
+
+
+
+/* NAVBAR */
+header {
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: space-between;
+    align-items : center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 28px;
+    color : #47a9d6;
+}
+
+nav{
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : flex-end;
+    gap : 10px;
+}
+nav a {
+    display : inline-block;
+    flex-wrap : wrap;
+    justify-content : center;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #47a9d6;
+    white-space : nowrap;
+    transition : 0.3s;
+}
+nav a:hover{
+    background : #42ecf6;
+    color : black;
+}
+
+/* RESUME SECTION */
+.resume {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    padding : 20px;
+}
+
+/* CONTAINER */
+.resume-container {
+    width: 90%;
+    margin : auto;
+    display: flex;
+    flex-wrap : wrap;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 35%;
+    background: linear-gradient(135deg, #47a9d6, #42ecf6);
+    flex : 1 1 250px;
+    padding: 20px;
+}
+
+.left img {
+    width: 120px;
+    height: 120px;
+    max-width : 100%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.left h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.right ul {
+    padding-left: 20px;
+    
+}
+
+
+.right {
+    width: 65%;
+    flex : 2 1 300px;
+    padding: 20px;
+}
+
+.right h2 {
+    color: #47a9d6
+}
+
+.right h3 {
+    margin-top : 20px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    color : #47a9d6;
+}
+
+.right p {
+    margin: 10px 0;
+}
+
+/* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right {
+        padding: 15px;
+    }
+
+    .right ul {
+        padding-left: 0;
+        list-style: none;
+    }
+}

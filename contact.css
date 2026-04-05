@@ -1,0 +1,241 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* FULL BACKGROUND IMAGE */
+body {
+    color: white;
+    background: url("https://t3.ftcdn.net/jpg/02/77/63/00/360_F_277630044_fDaatUvU2Bf1m1rCuO8DruD5uUHBoUwK.jpg")no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    flex-wrap : wrap;
+    align-items : center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color : #47a9d6;
+}
+
+nav{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    gap : 10px;
+    flex-wrap : wrap;
+}
+
+nav a {
+    display : inline-block;
+    flex-wrap : wrap;
+    justify-content : center;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size : 14px;
+    background: #47a9d6;
+}
+
+nav a:hover {
+    background: #42ecf5;
+    color: black;
+}
+
+/* SECTION */
+.contact-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-section h2 {
+    color: #47a9d6;
+    margin-bottom: 30px;
+}
+
+/* BOX */
+.contact-box {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap : wrap;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 50%;
+    flex : 1 1 300px;
+    padding: 30px;
+    background: linear-gradient(135deg, #47a9d6, #0fd2d9);
+    text-align: left;
+}
+
+.left h3 {
+    margin-bottom: 15px;
+}
+
+.left p {
+    margin: 10px 0;
+}
+
+.social-btns{
+    display : flex;
+    flex-wrap : wrap;
+    gap : 10px;
+    margin-top : 15px;
+}
+
+/* BUTTONS */
+.social-btns button {
+    display : flex;
+    flex-wrap : wrap;
+    gap : 10px;
+    margin: 10px 10px 10px 0;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+/* EXTRA ICONS */
+.extra-icons {
+    margin-top: 20px;
+}
+
+.extra-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.extra-icons i:hover {
+    color: black;
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 50%;
+    background: #e5e7eb;
+    flex : 1 1 300px;
+    padding: 30px;
+}
+
+.right input,
+.right textarea {
+    width: 100%;
+    max-width : 100%;
+    box-sizing : border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+}
+
+.right textarea {
+    height: 100px;
+}
+
+/* BUTTON */
+.send-btn {
+    width: 100%;
+    padding: 12px;
+    background: #47a9d6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background : #0fd2d9;
+}
+
+/* 📱 MOBILE VIEW */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: row;
+        text-align: center;
+        align-items : center;
+    }
+
+    nav {
+        margin-top: 10px;
+        flex-direction : row;
+        flex-wrap : wrap;
+        display : flex;
+        gap : 8px;
+        margin-top : 10px;
+        width : 100%;
+        justify-content : center;
+    }
+
+    nav a {
+        font-size : 12px;
+        padding : 6px 10px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .right input,
+    .right textarea {
+        font-size: 14px;
+    }
+
+    .extra-icons{
+        text-align : center;
+    }
+
+    .send-btn {
+        width: 100%;
+    }
+
+    .social-btns {
+        justify-content: center;
+    }
+    @media (max-width: 480px) {
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  /* 2 buttons per row */
+        gap: 10px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        padding: 8px 0;
+    }
+}
+}
