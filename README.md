@@ -8,7 +8,7 @@ This is my personal portfolio website created to showcase my skills, projects, a
 3️⃣ Technologies Used
 HTML
 CSS
-
+ 
 4️⃣ Features
 Responsive portfolio design
 About section with personal details
